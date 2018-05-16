@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Elevations</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		
+		<!-- Import BootStrap -->
+		<!-- Latest Bootstrap CSS -->
+		<link href="styles/bootstrap.css" rel="stylesheet">
+
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		<link href="styles/fonts.css" rel="stylesheet" type="text/css" />
+
+		<!-- Import Jquery -->
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<!-- Import ScrollTo -->
+		<script type="text/javascript">
+			$.scrollTo = $.fn.scrollTo = function(x, y, options){
+			    if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
+
+			    options = $.extend({}, {
+			        gap: {
+			            x: 0,
+			            y: 10
+			        },
+			        animation: {
+			            easing: 'swing',
+			            duration: 1300,
+			            complete: $.noop,
+			            step: $.noop
+			        }
+			    }, options);
+
+			    return this.each(function(){
+			        var elem = $(this);
+			        elem.stop().animate({
+			            scrollLeft: !isNaN(Number(x)) ? x : $(y).offset().left + options.gap.x,
+			            scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top + options.gap.y
+			        }, options.animation);
+			    });
+			};
+		</script>
+
+	</head> 
+
+<body>
+		<nav class=" navbar-fixed-top">
+			<div class="anchor-menu container">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+				</button>
+
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#gratitudes">Words of Gratitude</a></li>
+						<li><a href="#quote">Quote</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--End of Anchor Menu-->
+
+		<a href="index.html" class="logo">
+			<img src="img/logo.png" alt="" width="60px" height="60px">
+			<h3>ELEVATIONS</h3>
+		</a>
+		<!--End of Nav Logo-->
+
+		<section class="parallax-1" id="home">
+			<div class="parallax-inner">
+				<div class="vertical-center">
+					<img src="img/arrowdown.png" height="50px" width="50px">
+				</div>
+			</div>
+		</section>
+		<!--End of Section 1-->
+		
+		 <section class="gratitude" id="gratitudes">
+		 	<div class="parallax-inner-grat">
+		 		<div class="container">
+			 		<h1 class="grat-title">What people are saying</h1>
+			 		<div class="col-md-6">
+			 			<p><i>"Helped me rediscover my branding and valuable skill set relevant to today's world."</i></p>
+						<p class="reviewName">-Ken Ong, freelance designer</p>
+			 		</div>
+			 		<div class="col-md-6">
+			 			<p><i>"Intriguing &#38; Sophisticated. Simply said, very helpful."</i></p>
+						<p class="reviewName">-Mac ZunYao freelance Musician</p>
+			 		</div>
+			 		<div class="col-md-12">
+			 			<p><i>"Beautiful works, committed bunch of people"</i></p>
+						<p class="reviewName">-Darren Bo, Guitarist for the Leftists</p>
+			 		</div>
+		 		</div>
+		 	</div>
+		 </section>
+		<!--End of Section 2-->
+
+		<section class="parallax-2" id="quote">
+			<div class="parallax-inner-quote">
+				<h1 class="quote">
+				"You hear a lot of the times that the music business is 90 percent business [and] 10 percent music." -Ludacris
+				</h1>
+				<p class="container quote-desc">
+				Business has always been paramount in the musical industry, from a humble small band to a large overnight sensation, the business of music affects everyone regardless of skill and luck.
+				</p>
+				<p class="container quote-desc">
+				At the heart of every business, is the act of Marketing. Defined as the art of communication between customers and businesses,  it is here at Elevations that we specialise at.
+				</p>
+			</div>
+		</section>
+		<!--End of Section 3-->
+
+		<section id="services" class="services-sect">
+			<div class="page-header">
+				<h1>Services</h1>
+			</div>
+			<a href="services.html" class="card">
+				<div class="col-md-4 col-xs-6 service-cards">
+					<h3><span aria-hidden="true" class="icon-brush"></span></br>Design Services</h3>
+					<p>We provide general design services, ranging from Logos to anything that requires design work.</p>
+				</div>
+			</a>
+			<a href="services.html#growth" class="card">
+				<div class="col-md-4 col-xs-6 service-cards">
+					<h3><span aria-hidden="true" class="icon-stats-dots"></span></br>Growth Campaigns</h3>
+					<p>We provide marketing campaign planning/execution to accelerate growth in fan-base and opportunities for Musicians.</p>
+				</div>
+			</a>
+			<a href="services.html#websites" class="card">
+				<div class="col-md-4 col-xs-6 service-cards">
+					<h3><span aria-hidden="true" class="icon-phonelink"></span></br>Website making</h3>
+					<p>We manually create websites for you to ensure extensive customisational abilities. We can also use Wix and other web builders to create quick solutions if needed, accompanied with the proper media required.</p>
+				</div>
+			</a>
+			<a href="services.html#photo-video" class="card">
+				<div class="col-md-4 col-xs-6 service-cards">
+					<h3><span aria-hidden="true" class="icon-monochrome_photos"></span></br>Photography/ Videography</h3>
+					<p>We provide renowned photographic/Video solutions that are aligned with your fundamental brand image.</p>
+				</div>
+			</a>
+			<a href="services.html#brand" class="card">
+				<div class="col-md-4 col-xs-6 service-cards">
+					<h3><span aria-hidden="true" class="icon-like"></span></br>Brand Consultation</h3>
+					<p>We host one to one brand consultations to further strengthen your brand identity, as well as provide marketing solutions and run-throughs of your current marketing strategy.</p>
+				</div>
+			</a>
+			<a href="services.html#social" class="card">
+				<div class="col-md-4 col-xs-6 service-cards">
+					<h3><span aria-hidden="true" class="icon-bubbles2"></span></br>Digital Marketing</h3>
+					<p>We provide social media and website management solutions that would ensure constant engagement and value created to fan-bases.</p>
+				</div>
+			</a>
+		</section>
+		<!--End of Section 4-->
+
+		<section class="contact">
+		<div class="container">
+			<div class="page-header" id="contact" id="contact">
+				<h2>CONTACT US</h2>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<p>Send us a message, or contact us from the address below</p>
+
+					<address>
+						<strong>Elevations Services.</strong></br>
+						<span class="glyphicon glyphicon-envelope"></span> 
+						413.elevations@gmail.com </br>
+						<span class="glyphicon glyphicon-earphone"></span> 
+						83664015 </br>
+					</address>
+				</div>
+
+				<div class="col-lg-8">
+					<form action="https://formspree.io/413.elevations@gmail.com" method="POST" class="form-horizontal">
+						<div class="form-group">
+							<label for="user-name" class="col-lg-2 control-label">
+								Name</label>
+
+							<div class="col-lg-10">
+								<input type="text" name="name" class="form-control" placeholder="Eg. Alex Baker">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="user-name" class="col-lg-2 control-label">
+								Email</label>
+
+							<div class="col-lg-10">
+								<input type="email" name="_replyto" class="form-control" placeholder="Eg. elevations@gmail.com">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="user-name" class="col-lg-2 control-label">
+								Message</label>
+
+							<div class="col-lg-10">
+								<textarea name="message" rows="3" class="form-control" placeholder="I am interested!"></textarea>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-lg-10 col-lg-offset-2">
+								<button type="submit" class="btn-primary btn">Submit</button>
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+		</section>
+		<!--End of Section 5-->
+
+		<footer>
+			<p>&copy;Elevations</p>
+			<p>Proudly created by Elevations' designer</p>
+		</footer>
+		<!--End of Page-->
+
+
+		<!-- Latest compiled Bootstrap JavaScript -->
+		<script src="js/bootstrap.min.js" async></script>
+
+		<script>
+		  $(function() {
+		      
+
+		     /**
+	         * This part causes smooth scrolling using scrollto.js
+	         * We target all a tags inside the nav, and apply the scrollto.js to it.
+	         */
+	        $("nav a").click(function(evn){
+	            evn.preventDefault();
+	            $('html,body').scrollTo(this.hash, this.hash); 
+	        });
+
+		     /**
+	         * This part handles the highlighting functionality.
+	         * We use the scroll functionality again, some array creation and 
+	         * manipulation, class adding and class removing, and conditional testing
+	         */
+	        var aChildren = $("nav li").children(); // find the a children of the list items
+	        var aArray = []; // create the empty aArray
+	        for (var i=0; i < aChildren.length; i++) {    
+	            var aChild = aChildren[i];
+	            var ahref = $(aChild).attr('href');
+	            aArray.push(ahref);
+	        } // this for loop fills the aArray with attribute href values
+	        
+	        $(window).scroll(function(){
+	            var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+	            var windowHeight = $(window).height(); // get the height of the window
+	            var docHeight = $(document).height();
+	            
+	            for (var i=0; i < aArray.length; i++) {
+	                var theID = aArray[i];
+	                var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+	                var divHeight = $(theID).height(); // get the height of the div in question
+	                if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+	                    $("a[href='" + theID + "']").addClass("nav-active");
+	                } else {
+	                    $("a[href='" + theID + "']").removeClass("nav-active");
+	                }
+	            }
+	            
+	            if(windowPos + windowHeight == docHeight) {
+	                if (!$("nav li:last-child a").hasClass("nav-active")) {
+	                    var navActiveCurrent = $(".nav-active").attr("href");
+	                    $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
+	                    $("nav li:last-child a").addClass("nav-active");
+	                }
+	            }
+	        });
+
+		  });
+		</script>
+
+	</body>
+	
+
+</html> 

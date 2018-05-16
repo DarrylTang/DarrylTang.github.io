@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Elevations-Services</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		
+		<!-- Import BootStrap -->
+		<!-- Latest Bootstrap CSS -->
+		<link href="styles/bootstrap.css" rel="stylesheet">
+
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		<link href="styles/fonts.css" rel="stylesheet" type="text/css" />
+
+		<!-- Import Jquery -->
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<!-- Import Responsive Slides -->
+		<script src="js/responsiveslides.min.js" async></script>
+		<!-- Import ScrollTo -->
+		<script type="text/javascript">
+			$.scrollTo = $.fn.scrollTo = function(x, y, options){
+			    if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
+
+			    options = $.extend({}, {
+			        gap: {
+			            x: 0,
+			            y: 10
+			        },
+			        animation: {
+			            easing: 'swing',
+			            duration: 1300,
+			            complete: $.noop,
+			            step: $.noop
+			        }
+			    }, options);
+
+			    return this.each(function(){
+			        var elem = $(this);
+			        elem.stop().animate({
+			            scrollLeft: !isNaN(Number(x)) ? x : $(y).offset().left + options.gap.x,
+			            scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top + options.gap.y
+			        }, options.animation);
+			    });
+			};
+		</script>
+
+
+	</head> 
+
+<body>
+		<nav class=" navbar-fixed-top">
+			<div class="anchor-menu container">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+				</button>
+
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#design">Design</a></li>
+						<li><a href="#growth">Growth</a></li>
+						<li><a href="#websites">Websites</a></li>
+						<li><a href="#photo-video">Photography/Videography</a></li>
+						<li><a href="#brand">Brand</a></li>
+						<li><a href="#social">Digital Marketing</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--End of Anchor Menu-->
+
+		<a href="index.html" class="logo">
+			<img src="img/logo.png" alt="" width="60px" height="60px">
+			<h3>ELEVATIONS</h3>
+		</a>
+		<!--End of Nav Logo-->
+
+		<section class="section-white" id="design">
+			<div class="parallax-inner-design">
+				<div class="container">
+
+					<div class="rslides_container">
+				      <ul class="rslides" id="slider3">
+				        <li><img src="img/Zyrane-logo1.png" alt=""></li>
+				        <li><img src="img/Zyrane-logo2.jpg" alt=""></li>
+				      </ul>
+				    </div>
+
+					<h1>
+					Design services
+					</h1>
+					<p>
+					The art of creating something from nothing is craftsmanship at it&#39;s finest. Here at Elevations, creativity and quality is what we uphold truly. We only design quality work that adhere to your important needs and wants.
+					</p>
+					<p>
+					Whether you just need a logo done, or a banner completed, We at Elevations provide quality services to help you accomplish your goals.
+					Face to face consultation will be held to better identify and clarify the needs of your project, and revisions (not changing the entire concept) will be unlimited to ensure that you are ultimately satisfied.</br>
+					</p>
+					
+					<h3>What this service provides:</h3>
+					<ul class="list-group col-md-4">
+					  <li class="list-group-item">Logo Designing</li>
+					  <li class="list-group-item">Banner Design of any size</li>
+					  <li class="list-group-item">Namecard Design</li>
+					  <li class="list-group-item">Website elements</li>
+					</ul>
+					<a href="contact.html" class="serv-btn">Contact Us</a>
+				</div>
+			</div>
+		</section>
+		<!--End of Design services-->
+
+		<section class="section-black" id="growth">
+			<div class="parallax-inner-growth">
+				<div class="container">
+					<img class="thumbnail" src="img/growth.jpg" alt="">
+					<h1>
+					Growth Campaigns
+					</h1>
+					<p>
+					Growth is an essential part to any business, and with that, more exposure is generated, causing greater prospects to arise. 
+					</p>
+					<p>
+					With our campaigns, we aim to increase exposure through social media or other marketing channels via intense community engagement, ensuring highly efficient and effective results that would otherwise be more costly using traditional advertising medias.
+					</p>
+					<p>
+					Campaigns will be tailored according to the needs and wants of any individual, as we at Elevations would like to maximise your potential gains and results.
+					</br>
+					</p>
+
+					<h3>What this service provides:</h3>
+					<ul class="list-group col-md-4">
+					  <li class="list-group-item">Outreach programs</li>
+					  <li class="list-group-item">Community Engagement campaigns</li>
+					  <li class="list-group-item">Guerrilla Marketing</li>
+					</ul>
+					<a href="contact.html" class="serv-btn">Contact Us</a>
+					
+				</div>
+			</div>
+		</section>
+		<!--End of Growth Campaigns-->
+
+		<section class="section-white" id="websites">
+			<div class="parallax-inner-websites">
+				<div class="container">
+					<img class="thumbnail" src="img/Website-Making.jpg" alt="">
+					<h1>
+					Website making
+					</h1>
+					<p>
+					The Website is the digital name card of any business, whether an E-commerce store or a small Mom and Pop, the website is still vital to leaving a digital footprint, as our world becomes more online and mobile.
+					</p>
+					<p>
+					Here at Elevations, we hard code or use templates for your websites depending on your needs and wants. Focusing on Aesthetics heavily as well as functionality. 
+					</p>
+					<p>
+					With Mobile support and many more features, to face to face consultations to truly understand what is needed, we guarantee you that your website will be tailored to the wildest of your imaginations.
+					</br>
+					</p>
+
+					<h3>What this service provides:</h3>
+					<ul class="list-group col-md-4">
+					  <li class="list-group-item">Hard-coded Website Design</li>
+					  <li class="list-group-item">Templated Website Design with more functionality</li>
+					  <li class="list-group-item">Contact Forms</li>
+					  <li class="list-group-item">Jquery Scripted functions</li>
+					</ul>
+					<a href="contact.html" class="serv-btn">Contact Us</a>
+
+				</div>
+			</div>
+		</section>
+		<!--End of Website making-->
+
+		<section class="section-black" id="photo-video">
+			<div class="parallax-inner-photo">
+				<div class="container">
+					<img class="thumbnail" src="img/photostudio.jpg" alt="">
+					<h1>
+					Photography/ Videography
+					</h1>
+					<p>
+					Be it for Ads, or for Marketing campaigns, we provide high quality photography/videography works to Ensure that customers are satisfied to the fullest. 
+					</p>
+					<p>
+					With the advent of Multi-media content, <i>65%</i> of C-Level executives visited a Vendor's website after a video, and <i>92%</i> of teens stated that viewing photos and videos on Social Media are their main causes for using Social Media.
+					</p>
+					<p>
+					Conclusively speaking, The act of Photography/Videography and Design services are paramount to today's world as content is shifting from text to multimedia due to it's more engaging nature.
+					</br>
+					</p>
+
+					<h3>What this service provides:</h3>
+					<ul class="list-group col-md-4">
+					  <li class="list-group-item">Raw Photography</li>
+					  <li class="list-group-item">Setting area of your choice or ours</li>
+					  <li class="list-group-item">Photography Editing</li>
+					  <li class="list-group-item">Video Shoots with Editing</li>
+					</ul>
+					<a href="contact.html" class="serv-btn">Contact Us</a>
+
+				</div>
+			</div>
+		</section>
+		<!--End of Photography/Videography-->
+
+		<section class="section-white" id="brand">
+			<div class="parallax-inner-brand">
+				<div class="container">
+					<img class="thumbnail" src="img/Consultation.jpg" alt="">
+					<h1>
+					Brand Consultation
+					</h1>
+					<p>
+					The Art of branding is a tough one to master, as many often lose themselves in the act, swaying sideways due to different circumstances.
+					</p>
+					<p>
+					With our consultations, we seek to help you identify your main motivations and Identity as a business. We thus aim to correlate your identity to the needs and wants of your customers, as the famous saying goes, "you don't decide your branding, your customer does.", and it is up to you to control how your customers react to you.
+					</p>
+					<p>
+					With a step away from traditional marketing, We aim to go through segmentation exercises, the 4Ps, CJMs and more with you, from a client's perspective, to Ensure that you will have a i branding in today's competitive markets.
+					</br>
+					</p>
+
+					<h3>What this service provides:</h3>
+					<ul class="list-group col-md-4">
+					  <li class="list-group-item">Marketing Plans</li>
+					  <li class="list-group-item">Branding</li>
+					  <li class="list-group-item">Service Innovation</li>
+					  <li class="list-group-item">Design thinking</li>
+					  <li class="list-group-item">Consumer testing</li>
+					</ul>
+					<a href="contact.html" class="serv-btn">Contact Us</a>
+
+				</div>
+			</div>
+		</section>
+		<!--End of Brand Consultation-->
+
+		<section class="section-black" id="social">
+			<div class="parallax-inner-social">
+				<div class="container">
+					<img class="thumbnail" src="img/management.jpg" alt="">
+					<h1>
+					Digital Marketing
+					</h1>
+					<p>
+					Marketing is the life force to any business, and no business would work without any level of marketing.
+					</p>
+					<p>
+					We at Elevations specialise at Digital Marketing, particularly in the areas of Social Media and Content strategy. 
+					
+					As Social media becomes common place, many businesses leveraged on the trend and successful results has been generated as such, however many businesses failed as well due to the lack of understanding of the online world.
+					</p>
+					<p>
+					As such, We at Elevations dedicate our expertise to Ensure that we understand your target market fully, and help provide/manage systems and guidelines to help your business flourish online at reasonably high ROIs.
+					</br>
+					</p>
+
+					<h3>What this service provides:</h3>
+					<ul class="list-group col-md-4">
+					  <li class="list-group-item">Digital Marketing</li>
+					  <li class="list-group-item">Content Marketing</li>
+					  <li class="list-group-item">Social Marketing</li>
+					  <li class="list-group-item">Blogging</li>
+					  <li class="list-group-item">Website management</li>
+					  <li class="list-group-item">Complimentary Design services</li>
+					</ul>
+					<a href="contact.html" class="serv-btn">Contact Us</a>
+					
+				</div>
+			</div>
+		</section>
+		<!--End of Social Media/Website Management-->
+		
+
+		<footer>
+			<p>&copy;Elevations</p>
+			<p>Proudly created by Elevations' designer</p>
+		</footer>
+		<!--End of Page-->
+
+
+		<!-- Latest compiled Bootstrap JavaScript -->
+		<script src="js/bootstrap.min.js" async></script>
+
+		<script>
+		  $(function() {
+		      $("#slider3").responsiveSlides({
+		        auto: true,
+		        pager: false,
+		        nav: true,
+		        speed: 900,
+		        maxwidth: 800,
+		        namespace: "large-btns"
+		      });
+
+		     /**
+	         * This part causes smooth scrolling using scrollto.js
+	         * We target all a tags inside the nav, and apply the scrollto.js to it.
+	         */
+	        $("nav a").click(function(evn){
+	            evn.preventDefault();
+	            $('html,body').scrollTo(this.hash, this.hash); 
+	        });
+
+		     /**
+	         * This part handles the highlighting functionality.
+	         * We use the scroll functionality again, some array creation and 
+	         * manipulation, class adding and class removing, and conditional testing
+	         */
+	        var aChildren = $("nav li").children(); // find the a children of the list items
+	        var aArray = []; // create the empty aArray
+	        for (var i=0; i < aChildren.length; i++) {    
+	            var aChild = aChildren[i];
+	            var ahref = $(aChild).attr('href');
+	            aArray.push(ahref);
+	        } // this for loop fills the aArray with attribute href values
+	        
+	        $(window).scroll(function(){
+	            var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+	            var windowHeight = $(window).height(); // get the height of the window
+	            var docHeight = $(document).height();
+	            
+	            for (var i=0; i < aArray.length; i++) {
+	                var theID = aArray[i];
+	                var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+	                var divHeight = $(theID).height(); // get the height of the div in question
+	                if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+	                    $("a[href='" + theID + "']").addClass("nav-active");
+	                } else {
+	                    $("a[href='" + theID + "']").removeClass("nav-active");
+	                }
+	            }
+	            
+	            if(windowPos + windowHeight == docHeight) {
+	                if (!$("nav li:last-child a").hasClass("nav-active")) {
+	                    var navActiveCurrent = $(".nav-active").attr("href");
+	                    $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
+	                    $("nav li:last-child a").addClass("nav-active");
+	                }
+	            }
+	        });
+
+		  });
+		</script>
+
+	</body>
+	
+
+</html> 
